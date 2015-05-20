@@ -1,0 +1,181 @@
+h1. !http://railsapps.github.io/images/rails-36x36.jpg(RailsApps Page Gem)! RailsApps Pages Gem
+
+Use this gem to add pages to a Rails application, including controllers, views, routing, and tests.
+
+RailsApps Pages is a utility gem to use during development. You can remove it after generating the pages you need. It was originally written for use by the "Rails Composer":http://railsapps.github.io/rails-composer/ tool. Use Rails Composer to build any of the "RailApps example applications":http://railsapps.github.io/ for use as starter apps.
+
+If you like the RailsApps Pages gem, you might be interested in the "RailsLayout gem":https://github.com/RailsApps/rails_layout which generates Rails application layout files for various front-end frameworks such as Bootstrap and Foundation.
+
+h4. !http://railsapps.github.io/images/join/join-railsapps.png(Join RailsApps)!:http://railsapps.github.io/
+
+h4. Support the RailsApps Project
+
+If the RailsApps Pages gem is useful to you, please accept our invitation to "join the RailsApps project":http://railsapps.github.io/. The RailsApps project provides example applications, tutorials, and starter tools, including the RailsApps Pages gem.
+
+h2. Install the Gem
+
+Add the gem to your Rails application Gemfile:
+
+<pre>
+group :development do
+  gem 'rails_apps_pages'
+end
+</pre>
+
+You don't need the RailsApps Pages gem deployed to production, so put it in the @development@ group.
+
+If you want to use a newer unreleased version from GitHub:
+
+<pre>
+group :development do
+  gem 'rails_apps_pages', github: 'RailsApps/rails_apps_pages'
+end
+</pre>
+
+h4. Use Bundler
+
+Use Bundler to install the gems:
+
+<pre>
+$ bundle install
+</pre>
+
+h2. Generate a Home Page
+
+To run the generator and create a home page:
+
+<pre>
+$ rails generate pages:home
+</pre>
+
+The generator will create:
+
+* app/views/visitors/index.html.erb
+* app/controllers/visitors_controller.rb
+* plus tests (if RSpec is installed)
+
+It will add a route to the *config/routes.rb* file:
+
+<pre>
+root :to => "visitors#index"
+</pre>
+
+Why a "Visitors" controller? Why not a "Home" controller or "Welcome" controller? Those names are acceptable. But the home page often implements a user story for a persona named "visitor," so a "Visitors" controller is appropriate.
+
+h2. Generate an "About" Page
+
+To run the generator and create an "About" page:
+
+<pre>
+$ rails generate pages:about
+</pre>
+
+The generator will create:
+
+* app/views/pages/about.html.erb
+* plus tests (if RSpec is installed)
+
+You'll need to install the "high_voltage gem":https://github.com/thoughtbot/high_voltage for the "About" page. The high_voltage gem makes it easy to add pages with static content (text that doesn't change), incorporating a site-wide application layout. The high_voltage gem provides the controller and routes needed to display any pages found in the *app/views/pages/* folder.
+
+h2. Generate User Pages Requiring Authentication
+
+If you have a User model and authentication with Devise or OmniAuth, you can add pages to display a list of users or each user's profile, restricted to signed in users.
+
+To run the generator and create pages to accompany a User model:
+
+<pre>
+$ rails generate pages:users
+</pre>
+
+The generator will create:
+
+* app/controllers/users_controller.rb
+* app/controllers/visitors_controller.rb
+* app/views/users/_user.html.erb
+* app/views/users/index.html.erb
+* app/views/users/show.html.erb
+* app/views/visitors/index.html.erb
+
+It will also add routes to the *config/routes.rb* file.
+
+h2. Generate User Pages Requiring Authorization
+
+If you have a User model, authentication with Devise, and authorization with Pundit, you can add pages to display a list of users, restricted to an administrator. Each user can see his or her own profile if logged in.
+
+To run the generator and create pages to accompany a User model with Pundit authorization:
+
+<pre>
+$ rails generate pages:authorized
+</pre>
+
+All files are identical to the @rails generate pages:users@ generator, except:
+
+* app/views/users/_user.html.erb
+* app/controllers/users_controller.rb
+* app/policies/user_policy.rb
+* plus tests (if RSpec is installed)
+
+h2. Clean a Gemfile
+
+Remove commented lines and multiple blank lines from a Gemfile:
+
+<pre>
+$ rails generate clean:gemfile
+</pre>
+
+h2. Clean a Routes File
+
+Remove commented lines and multiple blank lines from the file *config/routes.rb*:
+
+<pre>
+$ rails generate clean:routes
+</pre>
+
+h2. Generate Analytics Files
+
+Add a file containing JavaScript code to set up page-view tracking with "Google Analytics":http://www.google.com/analytics/:
+
+<pre>
+$ rails generate analytics:google
+</pre>
+
+Add a file containing JavaScript code to set up page-view tracking with "Segment.io":https://segment.io/:
+
+<pre>
+$ rails generate analytics:segmentio
+</pre>
+
+h2. Issues
+
+Any issues? Please create an "issue":http://github.com/RailsApps/rails_apps_pages/issues on GitHub. Reporting issues (and patching!) helps everyone.
+
+h2. Credits
+
+Daniel Kehoe maintains this gem as part of the "RailsApps project":http://railsapps.github.io/.
+
+Please see the "CHANGELOG":https://github.com/RailsApps/rails_apps_pages/blob/master/CHANGELOG.textile for a list of contributors.
+
+Is the gem useful to you? Follow the project on Twitter: "@rails_apps":http://twitter.com/rails_apps. I'd love to know you were helped out by the gem.
+
+h2. MIT License
+
+"MIT License":http://www.opensource.org/licenses/mit-license
+
+Copyright © 2014 Daniel Kehoe
+
+h2. Useful Links
+
+|_. Getting Started |_. Articles |_. Tutorials |
+| "Ruby on Rails":http://railsapps.github.io/ruby-and-rails.html |                                     "Analytics for Rails":http://railsapps.github.io/rails-google-analytics.html |                 "Rails Bootstrap":http://railsapps.github.io/twitter-bootstrap-rails.html |
+| "What is Ruby on Rails?":http://railsapps.github.io/what-is-ruby-rails.html |                        "Heroku and Rails":http://railsapps.github.io/rails-heroku-tutorial.html |                     "Rails Foundation":http://railsapps.github.io/rails-foundation.html |
+| "Learn Ruby on Rails":http://learn-rails.com/learn-ruby-on-rails.html |                              "JavaScript and Rails":http://railsapps.github.io/rails-javascript-include-external.html |     "RSpec Tutorial":http://railsapps.github.io/rspec.html |
+| "Rails Tutorial":https://tutorials.railsapps.org/rails-tutorial |                                    "Rails Environment Variables":http://railsapps.github.io/rails-environment-variables.html |    "Rails Devise Tutorial":http://railsapps.github.io/tutorial-rails-devise.html |
+| "Ruby on Rails Tutorial for Beginners":http://learn-rails.com/ruby-on-rails-tutorial-for-beginners | "Git and GitHub with Rails":http://railsapps.github.io/rails-git.html |                        "Devise RSpec":http://railsapps.github.io/tutorial-rails-devise-rspec-cucumber.html |
+| "Install Ruby on Rails":http://railsapps.github.io/installing-rails.html |                           "Send Email with Rails":http://railsapps.github.io/rails-send-email.html |                     "Devise Bootstrap":http://railsapps.github.io/tutorial-rails-bootstrap-devise-cancan.html |
+| "Install Ruby on Rails - Mac OS X":http://railsapps.github.io/installrubyonrails-mac.html |          "Haml and Rails":http://railsapps.github.io/rails-haml.html |                                  "Rails Membership Site with Stripe":https://tutorials.railsapps.org/rails-stripe-membership-saas |
+| "Install Ruby on Rails - Ubuntu":http://railsapps.github.io/installrubyonrails-ubuntu.html |         "Rails Application Layout":http://railsapps.github.io/rails-default-application-layout.html |  "Rails Subscription Site with Recurly":https://tutorials.railsapps.org/rails-recurly-subscription-saas |
+| "Ruby on Rails - Nitrous.io":http://railsapps.github.io/rubyonrails-nitrous-io.html |                "HTML5 Boilerplate for Rails":http://railsapps.github.io/rails-html5-boilerplate.html |        "Startup Prelaunch Signup Application":https://tutorials.railsapps.org/rails-prelaunch-signup |
+| "Update Rails":http://railsapps.github.io/updating-rails.html |                                      "Example Gemfiles for Rails":http://railsapps.github.io/rails-3-2-example-gemfile.html |
+| "Rails Composer":http://railsapps.github.io/rails-composer/ |                                        "Rails Application Templates":http://railsapps.github.io/rails-application-templates.html |
+| "Rails Examples":http://railsapps.github.io/ |                                                       "Rails Product Planning":http://railsapps.github.io/rails-product-planning.html |
+| "Rails Starter Apps":http://railsapps.github.io/rails-examples-tutorials.html |                      "Rails Project Management":http://railsapps.github.io/rails-project-management.html |

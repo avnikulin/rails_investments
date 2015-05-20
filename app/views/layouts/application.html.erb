@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Railsbootstrap" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Railsbootstrap" %>">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main">
+       <%= render 'layouts/messages' %>
+       <%= yield %>
+    </main>
+    <footer class="footer">
+      <div class="container">
+				<div class="col-md-4 text-center">
+				                <h3><span class="glyphicon glyphicon-envelope"></span> Contact Us</h3>
+				                <p>Content for the first footer section.</p>
+				            </div>
+				            <div class="col-md-4 text-center">
+				                <h3><span class="glyphicon glyphicon-star"></span> Careers</h3>
+				                <p>Content for the second footer section.</p>
+				            </div>
+				            <div class="col-md-4 text-center">
+				                <h3><span class="glyphicon glyphicon-cloud"></span> Get to know us</h3>
+				                <p>Content for the third footer section.</p>
+				            </div>
+			      </div>
+    </footer>
+  </body>
+</html>

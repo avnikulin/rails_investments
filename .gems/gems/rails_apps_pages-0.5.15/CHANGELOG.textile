@@ -1,0 +1,125 @@
+h1. CHANGELOG
+
+h3. 0.5.15 September 14, 2014
+
+* generate a navlink for Upmin using the 'rails_layout' gem instead
+
+h3. 0.5.14 September 14, 2014
+
+* add generator for Upmin for an admin interface
+
+h3. 0.5.13 August 27, 2014
+
+* support 'rails-devise-roles' example application
+
+h3. 0.5.12 August 14, 2014
+
+* minor change to routes for OmniAuth user pages
+
+h3. 0.5.11 July 13, 2014
+
+* generate JavaScript for analytics
+
+h3. 0.5.10 July 2, 2014
+
+* don't generate a home page if it already exists
+* generate routes for OmniAuth for users pages
+
+h3. 0.5.9 June 30, 2014
+
+* use new style routes syntax
+
+h3. 0.5.8 June 26, 2014
+
+* don't set routes for OmniAuth applications
+
+h3. 0.5.7 June 26, 2014
+
+* remove 'capture email' feature from rails-omniauth example application
+
+h3. 0.5.6 June 19, 2014
+
+* add files to integrate Pundit with OmniAuth
+
+h3. 0.5.5 June 19, 2014
+
+* don't generate 'users' pages when generating 'authorized' pages
+
+h3. 0.5.4 June 19, 2014
+
+* generate a home page to accompany the 'about' page
+* replace 'lorem ipsum' with an informative description
+
+h3. 0.5.3 June 17, 2014
+
+* Devise permitted parameters moved to 'config/initializers/devise_permitted_parameters.rb'
+
+h3. 0.5.2 June 14, 2014
+
+* updated policy for Pundit example
+
+h3. 0.5.1 June 13, 2014
+
+* updated User controller and policy for Pundit example
+
+h3. 0.5.0 June 6, 2014
+
+* tests for Devise are now available in the rails_apps_testing gem (removed here)
+
+h3. 0.4.9 June 5, 2014
+
+* minor improvement for Devise 'delete user' test for RSpec 3.0
+
+h3. 0.4.8 June 4, 2014
+
+* skip a slow test when using RSpec with Devise
+
+h3. 0.4.7 June 4, 2014
+
+* "require 'rails_helper'" not needed when it is included in the '.rspec' file
+
+h3. 0.4.6 June 2, 2014
+
+* update for RSpec 3.0
+
+h3. 0.4.5 May 31, 2014
+
+* user pages for OmniAuth
+
+h3. 0.4.4 May 13, 2014
+
+* RSpec tests that use Warden test helpers need a reset action
+
+h3. 0.4.3 May 10, 2014
+
+* use Devise 'lazy way' to add name attribute to permitted parameters
+
+h3. 0.4.2 May 10, 2014
+
+* additional 'devise' tags for RSpec tests
+
+h3. 0.4.1 May 10, 2014
+
+* add 'devise' tag to RSpec tests
+* change 'log in' to 'sign in' and 'logout' to 'sign out'
+
+h3. 0.4.0 May 6, 2014
+
+* generate tests when RSpec is installed
+* update Users controller to deny access to other users' profiles
+
+h3. 0.3.1 May 2, 2014
+
+* add a generator for an 'About' page
+
+h3. 0.3.0 May 1, 2014
+
+* add Devise registrations controller for 'users' and 'authorized' generators
+
+h3. 0.2.0 May 1, 2014
+
+* fixes for 'authorized' generator
+
+h3. 0.1.0 May 1, 2014
+
+* initial release

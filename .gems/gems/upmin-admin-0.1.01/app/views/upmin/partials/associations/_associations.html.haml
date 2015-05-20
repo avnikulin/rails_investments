@@ -1,0 +1,12 @@
+%h5
+  = association.title
+
+- if association.empty?
+  %p.well
+    None
+
+- else
+  - association.upmin_values.each do |m|
+    %a.active-tag-link{href: m.path}
+      %span.label{class: m.color}
+        = m.title

@@ -1,0 +1,9 @@
+- query.upmin_results.each do |result|
+  %a.search-result-link{href: result.path}
+    .upmin-model{class: result.color}
+      %dl.dl-horizontal
+        - result.attributes.each do |attribute|
+          %dt
+            = attribute.label_name
+          %dd
+            = attribute.value

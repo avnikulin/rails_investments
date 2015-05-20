@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %title
+      Upmin Dashboard
+    = stylesheet_link_tag("upmin/application", media: "all")
+    = javascript_include_tag("upmin/application")
+    = csrf_meta_tags
+
+    %link{href: "//cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css", rel: "stylesheet", type: "text/css"}
+    %link{href: "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel: "stylesheet"}
+    %script{src: "//cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"}
+    %script{src: "//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"}
+
+    - if content_for?(:head)
+      = yield(:head)
+
+
+  %body{ class: body_classes, data: body_data.merge(root_path: root_path) }
+    .page-wrap
+      = render('layouts/upmin/navbar')
+      -# = render('layouts/flash')
+      = yield
+
+    -# = render('layouts/footer')
+
+    - if content_for?(:javascript)
+      = yield(:javascript)

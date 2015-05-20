@@ -1,0 +1,15 @@
+.navbar.navbar-default.navbar-static-top
+  .container
+    .navbar-header
+      %a.navbar-brand{href: root_path}
+        Upmin
+      %button.navbar-toggle{"data-target" => "#navbar-main", "data-toggle" => "collapse", type: "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    #navbar-main.navbar-collapse.collapse
+      %ul.nav.navbar-nav
+        - Upmin::Model.all.each do |m|
+          %li
+            %a{href: m.search_path}
+              = m.humanized_name(:plural)
