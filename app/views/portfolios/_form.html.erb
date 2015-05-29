@@ -2,7 +2,7 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.select :user_id, User.all.collect { |p| [ p.name, p.id ] } %>
+    <% # f.select :user_id, User.all.collect { |p| [ p.name, p.id ] } %>
     <%= f.select :stock_id, Stock.all.collect { |p| [ p.symbol, p.id ] } %>
     <%= f.input :name %>
   </div>

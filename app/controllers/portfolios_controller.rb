@@ -1,10 +1,11 @@
 class PortfoliosController < ApplicationController
   before_action :set_portfolio, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
+  
   # GET /portfolios
   # GET /portfolios.json
   def index
-    @portfolios = Portfolio.all
+    @portfolios = current_user.portfolios.order('created_at desc')
   end
 
   # GET /portfolios/1
@@ -14,7 +15,7 @@ class PortfoliosController < ApplicationController
 
   # GET /portfolios/new
   def new
-    @portfolio = Portfolio.new
+    @portfolio = current_user.portfolios.new
   end
 
   # GET /portfolios/1/edit
@@ -24,7 +25,7 @@ class PortfoliosController < ApplicationController
   # POST /portfolios
   # POST /portfolios.json
   def create
-    @portfolio = Portfolio.new(portfolio_params)
+    @portfolio = current_user.portfolios.new(portfolio_params)
 
     respond_to do |format|
       if @portfolio.save
@@ -64,7 +65,10 @@ class PortfoliosController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_portfolio
-      @portfolio = Portfolio.find(params[:id])
+      unless @portfolio = current_user.portfolios.where(id: params[:id]).first
+        flash[:alert] = 'Portfolio not found.'
+        redirect_to root_url
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

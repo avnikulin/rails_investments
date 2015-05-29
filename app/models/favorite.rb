@@ -4,7 +4,7 @@ class Favorite < ActiveRecord::Base
     # ensure that a user_id is present
     validates :user_id, presence: true
 
-    # ensure that title is present and at least 10 chars long
+    # ensure that stock symbol is present and at least 2 chars long
     validates :symbol, length: { minimum: 2 }, presence: true
 
     # ensure the url is present, and respects the URL format for http/https
