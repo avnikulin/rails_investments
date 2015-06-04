@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Holdings</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Stock</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @holdings.each do |holding| %>
+      <tr>
+        <td><%= holding.user.name %></td>
+        <td><%= link_to holding.stock.symbol, holding.stock %></td>
+        <td><%= holding.name %></td>
+        <td><%= link_to 'Show', holding %></td>
+        <td><%= link_to 'Edit', edit_holding_path(holding) %></td>
+        <td><%= link_to 'Destroy', holding, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Holding', new_holding_path %>
