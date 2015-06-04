@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
   has_many :favorites
+  has_many :portfolios
   has_many :holdings
   has_many :stocks, :through => :holdings
 
