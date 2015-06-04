@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   resources :holdings
 
-  resources :portfolios
-
   resources :stocks
 
   resources :favorites
