@@ -16,10 +16,10 @@ Gem::Specification.new do |s|
   s.homepage = "http://haml.info/"
   s.licenses = ["MIT"]
   s.post_install_message = "\nHEADS UP! Haml 4.0 has many improvements, but also has changes that may break\nyour application:\n\n* Support for Ruby 1.8.6 dropped\n* Support for Rails 2 dropped\n* Sass filter now always outputs <style> tags\n* Data attributes are now hyphenated, not underscored\n* html2haml utility moved to the html2haml gem\n* Textile and Maruku filters moved to the haml-contrib gem\n\nFor more info see:\n\nhttp://rubydoc.info/github/haml/haml/file/CHANGELOG.md\n\n"
-  s.rubygems_version = "2.4.5"
+  s.rubygems_version = "2.4.7"
   s.summary = "An elegant, structured (X)HTML/XML templating engine."
 
-  s.installed_by_version = "2.4.5" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.4.7" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

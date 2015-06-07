@@ -12,10 +12,10 @@ Gem::Specification.new do |s|
   s.email = "tom@conceptcoding.co.uk"
   s.homepage = "https://github.com/twbs/bootstrap-sass"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.4.5"
+  s.rubygems_version = "2.4.7"
   s.summary = "Twitter's Bootstrap, converted to Sass and ready to drop into Rails or Compass"
 
-  s.installed_by_version = "2.4.5" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.4.7" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
   s.email = ["rafaelmfranca@gmail.com", "kaspth@gmail.com"]
   s.homepage = "https://github.com/rails/rails-dom-testing"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.4.5"
+  s.rubygems_version = "2.4.7"
   s.summary = "Dom and Selector assertions for Rails applications"
 
-  s.installed_by_version = "2.4.5" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.4.7" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

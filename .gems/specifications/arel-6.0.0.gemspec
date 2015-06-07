@@ -16,10 +16,10 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/rails/arel"
   s.licenses = ["MIT"]
   s.rdoc_options = ["--main", "README.markdown"]
-  s.rubygems_version = "2.4.5"
+  s.rubygems_version = "2.4.7"
   s.summary = "Arel Really Exasperates Logicians  Arel is a SQL AST manager for Ruby"
 
-  s.installed_by_version = "2.4.5" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.4.7" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
