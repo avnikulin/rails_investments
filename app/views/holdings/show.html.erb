@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<h1>Listing Holdings</h1>
+
 <p>
   <strong>User:</strong>
   <%= @holding.user.name %>
@@ -11,8 +13,8 @@
 </p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @holding.name %>
+  <strong>Amount of Shares:</strong>
+  <%= @holding.amount %>
 </p>
 
 <%= link_to 'Edit', edit_holding_path(@holding) %> |

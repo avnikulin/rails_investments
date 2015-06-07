@@ -1,4 +1,5 @@
 class Portfolio < ActiveRecord::Base
   belongs_to :user
-  belongs_to :holding
+  has_many :holdings
+  accepts_nested_attributes_for :holdings, allow_destroy: true
 end

@@ -55,4 +55,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  # In case of unpermitted parameters in the controller raise error.
+  config.action_controller.action_on_unpermitted_parameters = :raise
 end

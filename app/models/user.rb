@@ -4,8 +4,6 @@ class User < ActiveRecord::Base
   has_many :favorites
   has_many :portfolios
   has_many :holdings
-  has_many :stocks, :through => :holdings
-
   def set_default_role
     self.role ||= :user
   end

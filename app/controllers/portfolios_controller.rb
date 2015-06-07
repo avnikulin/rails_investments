@@ -11,21 +11,28 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/1
   # GET /portfolios/1.json
   def show
+    @portfolios = current_user.portfolios.order('created_at desc')
+    @holdings = @portfolio.holdings :include => [:portfolio_id]
   end
 
   # GET /portfolios/new
   def new
     @portfolio = current_user.portfolios.new
+    @portfolio.holdings.build
   end
 
   # GET /portfolios/1/edit
   def edit
+    @portfolio = current_user.portfolios.find params[:id]
+    @portfolio.holdings.build
   end
 
   # POST /portfolios
   # POST /portfolios.json
   def create
     @portfolio = current_user.portfolios.new(portfolio_params)
+    @portfolio.holdings.first.user_id = current_user.id
+    
 
     respond_to do |format|
       if @portfolio.save
@@ -73,6 +80,6 @@ class PortfoliosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def portfolio_params
-      params.require(:portfolio).permit(:user_id, :holding_id, :name)
+      params.require(:portfolio).permit(:user_id, :holding_id, :name, holdings_attributes: [:id, :amount, :stock_id, :user_id])
     end
 end

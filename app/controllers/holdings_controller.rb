@@ -11,6 +11,7 @@ class HoldingsController < ApplicationController
   # GET /holdings/1
   # GET /holdings/1.json
   def show
+    @holdings = current_user.holdings.order('created_at desc')
   end
 
   # GET /holdings/new
@@ -73,6 +74,6 @@ class HoldingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def holding_params
-      params.require(:holding).permit(:user_id, :stock_id, :name)
+      params.require(:holding).permit(:id, :user_id, :stock_id, :name, :portfolio_id, :amount)
     end
 end

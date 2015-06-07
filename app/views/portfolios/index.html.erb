@@ -2,11 +2,10 @@
 
 <h1>Listing Portfolios</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>User</th>
-      <th>Holding</th>
       <th>Name</th>
       <th colspan="3"></th>
     </tr>
@@ -16,7 +15,6 @@
     <% @portfolios.each do |portfolio| %>
       <tr>
         <td><%= portfolio.user.name %></td>
-        <td><%= portfolio.holding_id %></td>
         <td><%= portfolio.name %></td>
         <td><%= link_to 'Show', portfolio %></td>
         <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>

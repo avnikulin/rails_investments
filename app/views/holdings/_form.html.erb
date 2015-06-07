@@ -4,7 +4,8 @@
   <div class="form-inputs">
     <% # f.select :user_id, User.all.collect { |p| [ p.name, p.id ] } %>
     <%= f.select :stock_id, Stock.all.collect { |p| [ p.symbol, p.id ] } %>
-    <%= f.input :name %>
+		<%= f.select :portfolio_id, Portfolio.all.collect { |p| [ p.name, p.id ] } %>
+    <%= f.input :amount %>
   </div>
 
   <div class="form-actions">
