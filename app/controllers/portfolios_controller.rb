@@ -11,8 +11,9 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/1
   # GET /portfolios/1.json
   def show
-    @portfolios = current_user.portfolios.order('created_at desc')
-    @holdings = @portfolio.holdings :include => [:portfolio_id]
+    #@portfolios = current_user.portfolios.order('created_at desc')
+    #@holdings = @portfolio.holdings.group(:stock_id).select("SUM(amount) as total, holdings.*").order("total DESC")
+    @holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
   end
 
   # GET /portfolios/new
