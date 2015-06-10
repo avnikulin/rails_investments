@@ -5,7 +5,7 @@ class HoldingsController < ApplicationController
   # GET /holdings
   # GET /holdings.json
   def index
-    @holdings = current_user.holdings.order('created_at desc')
+    @holdings = Holding.all.order('created_at desc')
   end
 
   # GET /holdings/1
@@ -41,7 +41,7 @@ class HoldingsController < ApplicationController
 
   # PATCH/PUT /holdings/1
   # PATCH/PUT /holdings/1.json
-  def update
+  def update    
     respond_to do |format|
       if @holding.update(holding_params)
         format.html { redirect_to @holding, notice: 'Holding was successfully updated.' }
