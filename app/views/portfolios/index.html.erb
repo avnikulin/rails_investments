@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Portfolios</h1>
+<h1>Your Portfolios</h1>
 
 <table class="table table-hover">
   <thead>
     <tr>
-      <th>User</th>
+      <!-- ><th>User</th> -->
       <th>Name</th>
       <th colspan="3"></th>
     </tr>
@@ -14,7 +14,7 @@
   <tbody>
     <% @portfolios.each do |portfolio| %>
       <tr>
-        <td><%= portfolio.user.name %></td>
+        <!-- ><td><%#= portfolio.user.name %></td> -->
         <td><%= portfolio.name %></td>
         <td><%= link_to 'Show', portfolio %></td>
         <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
