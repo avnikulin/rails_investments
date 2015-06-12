@@ -15,3 +15,11 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+	$(document).ready(function(){
+	   var sum = 0;
+	   $('td.value').each(function(){
+	        sum += parseInt($(this).text());
+	   });
+	   $('#total-value').val(sum);
+	 });

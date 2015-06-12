@@ -9,6 +9,8 @@
       <th>Name</th>
 			<th>Stocks</th>
 			<th>Amount</th>
+			<th>Current Price</th>
+			<th>Value</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,13 +18,19 @@
   <tbody>
 		<% @holdings.each do |holdings| %>
     
-      <tr>
+      <tr class = "stock">
         <td><%= holdings.portfolio.user.name %></td>
         <td><%= holdings.portfolio.name %></td>
 				<td><%= holdings.stock.symbol %></td>
-				<td><%= holdings.sum_amount %></td>
-       
-      </tr>
+				<td><% amount = holdings.sum_amount %>
+					<%= amount %></td>
+				<% data = YahooFinance.quotes(["#{holdings.stock.symbol}"], [:ask]) %>
+					<% price = data[0].ask %>
+					<td><%= price %></td>
+				<% value = amount.to_f * price.to_f %><td>
+					<%= number_to_currency(value) %></td>
+				</tr>
+
     <% end %>
   </tbody>
 </table>
