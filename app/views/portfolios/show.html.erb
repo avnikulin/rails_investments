@@ -2,10 +2,9 @@
 
 <h1>Portfolio</h1>
 
-<table class="table table-hover">
+<table class="table table-hover" id = "example">
   <thead>
     <tr>
-      <th>Name</th>
 			<th>Ticker</th>
 			<th>Company</th>
 			<th>Amount</th>
@@ -26,13 +25,12 @@
 		<% name = data[0].name %>
 		<% value = amount.to_f * price.to_f %>
 		
-      <tr class = "stock">
-        <td><%= holdings.portfolio.name %></td>
+      <tr>
 				<td><%= holdings.stock.symbol %></td>
 				<td><%= name %></td>
 				<td><%= amount %></td>
 				<td><%= price %></td>
-				<td><%= change %></td>
+				<td class = "currency"><%= change %></td>
 				<td><%= number_to_currency(value) %></td>
 				</tr>
 

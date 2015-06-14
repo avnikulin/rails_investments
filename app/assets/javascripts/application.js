@@ -12,14 +12,20 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
 
-	$(document).ready(function(){
-	   var sum = 0;
-	   $('td.value').each(function(){
-	        sum += parseInt($(this).text());
-	   });
-	   $('#total-value').val(sum);
-	 });
+	$(document).ready( function() {
+
+	$("td.currency").each(function() {
+    var text = $(this).text();
+    var num = parseFloat(text);
+   	if (num < 0) {
+      $(this).addClass("negative");
+   	} else if (num > 0) {
+      $(this).addClass("positive");
+    }
+  });
+	
+});
+	
