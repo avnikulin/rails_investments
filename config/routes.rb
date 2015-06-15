@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :portfolios
+  resources :portfolios do
+    get :autocomplete_stock_symbol, :on => :collection
+  end
 
   resources :holdings
 

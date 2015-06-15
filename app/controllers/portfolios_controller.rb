@@ -1,7 +1,8 @@
 class PortfoliosController < ApplicationController
   before_action :set_portfolio, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-
+  autocomplete :stock, :symbol
+  
   # GET /portfolios
   # GET /portfolios.json
   def index
@@ -79,6 +80,6 @@ class PortfoliosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def portfolio_params
-      params.require(:portfolio).permit(:user_id, :holding_id, :name, holdings_attributes: [:id, :amount, :stock_id, :user_id])
+      params.require(:portfolio).permit(:user_id, :holding_id, :name, holdings_attributes: [:id, :stock, :amount, :stock_id, :user_id])
     end
 end

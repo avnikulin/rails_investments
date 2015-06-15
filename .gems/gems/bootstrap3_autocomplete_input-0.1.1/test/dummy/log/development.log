@@ -1,0 +1,1428 @@
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2014-12-25 03:57:30 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (105.0ms)
+  Rendered orders/new.html.erb within layouts/application (109.0ms)
+Completed 500 Internal Server Error in 54001ms
+
+ActionView::Template::Error (
+  (in D:/mmx/projects/www/myrails/bootstrap3_autocomplete_input/test/dummy/app/assets/javascripts/application.js)):
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___166866100_43449204'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2014-12-25 03:58:24 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (8.0ms)
+  Rendered orders/new.html.erb within layouts/application (10.0ms)
+Completed   in 129ms
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2014-12-25 03:58:41 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (80.0ms)
+  Rendered orders/new.html.erb within layouts/application (85.0ms)
+Completed 500 Internal Server Error in 61472ms
+
+ActionView::Template::Error (
+  (in D:/mmx/projects/www/myrails/bootstrap3_autocomplete_input/test/dummy/app/assets/javascripts/application.js)):
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___117824639_33822924'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2014-12-25 03:59:43 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (12.0ms)
+  Rendered orders/new.html.erb within layouts/application (13.0ms)
+Completed   in 100ms
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2014-12-25 04:02:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (147.0ms)
+  Rendered orders/new.html.erb within layouts/application (154.0ms)
+Completed 500 Internal Server Error in 57309ms
+
+ActionView::Template::Error (
+  (in D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/jquery-rails-3.1.2/vendor/assets/javascripts/jquery.js)):
+    3: <head>
+    4:   <title>Dummy</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___315908633_43324008'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2014-12-25 04:04:24 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (176.0ms)
+  Rendered orders/new.html.erb within layouts/application (186.0ms)
+Completed 200 OK in 473ms (Views: 463.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-25 04:04:25 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-25 04:04:25 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-25 04:04:25 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-25 04:04:25 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.js?body=1" for 127.0.0.1 at 2014-12-25 04:04:25 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2014-12-25 04:04:25 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-25 04:04:25 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2014-12-25 04:04:29 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (1.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 11ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=ba" for 127.0.0.1 at 2014-12-25 04:04:30 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"ba"}
+  [1m[36mClient Load (1.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'ba%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2014-12-25 04:17:30 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (215.0ms)
+  Rendered orders/new.html.erb within layouts/application (226.0ms)
+Completed 200 OK in 618ms (Views: 608.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-25 04:17:32 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2014-12-25 04:17:32 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.min.js?body=1" for 127.0.0.1 at 2014-12-25 04:17:32 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-25 04:17:32 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-25 04:17:32 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-25 04:17:32 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-12-25 04:17:32 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2014-12-25 04:17:45 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 25ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-04 02:02:00 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (97.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-04 02:03:45 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 02:41:56 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (64.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 02:45:34 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 02:46:18 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 02:46:45 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 02:46:47 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 02:48:15 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 02:48:41 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 02:48:42 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 02:49:42 +0200
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:190:in `rescue in spec'
+  activerecord (4.1.8) lib/active_record/connection_adapters/connection_specification.rb:187:in `spec'
+  activerecord (4.1.8) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.1.8) lib/active_record/railtie.rb:129:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.1.8) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.1.8) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+  activerecord (4.1.8) lib/active_record/base.rb:23:in `<top (required)>'
+  activerecord (4.1.8) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200p451x32/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-18 02:50:04 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered D:/Ruby200p451x32/lib/ruby/gems/2.0.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 73ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2015-03-18 02:50:22 +0200
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.0ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3461ms (Views: 3379.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:26 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 02:50:26 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:26 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:26 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:26 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:26 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:26 +0200
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 02:50:27 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (639.0ms)
+  Rendered orders/new.html.erb within layouts/application (738.0ms)
+Completed 200 OK in 811ms (Views: 810.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:28 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:28 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:28 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:28 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 02:50:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:28 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=i" for 127.0.0.1 at 2015-03-18 02:50:32 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"i"}
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'i%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 3ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=iv" for 127.0.0.1 at 2015-03-18 02:50:33 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"iv"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'iv%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=iva" for 127.0.0.1 at 2015-03-18 02:50:34 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"iva"}
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'iva%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=iva" for 127.0.0.1 at 2015-03-18 02:50:35 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"iva"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'iva%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2015-03-18 02:50:44 +0200
+Processing by ClientsController#index as HTML
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 83ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 02:50:45 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:45 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:45 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:45 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:45 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:45 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 02:50:45 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 02:50:50 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (1.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=Banana" for 127.0.0.1 at 2015-03-18 02:51:09 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"Banana"}
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'banana%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 02:52:02 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (7.0ms)
+  Rendered orders/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 150ms (Views: 150.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 02:52:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 02:52:02 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 02:52:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 02:52:02 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 02:52:03 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:52:03 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:52:03 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:52:06 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 02:52:38 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 3ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 02:58:16 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (6.0ms)
+  Rendered orders/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:16 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:16 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 02:58:16 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:16 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:17 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:17 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:17 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 02:58:21 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 02:58:38 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (109.0ms)
+  Rendered orders/new.html.erb within layouts/application (115.0ms)
+Completed 200 OK in 273ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:39 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:39 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:39 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 02:58:39 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:39 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.min.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:39 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 02:58:39 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 02:58:56 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:00:22 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (107.0ms)
+  Rendered orders/new.html.erb within layouts/application (111.0ms)
+Completed 200 OK in 286ms (Views: 281.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:00:22 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2015-03-18 03:00:22 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:00:22 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:00:22 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:00:22 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:00:22 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:00:22 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:00:25 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 5ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:07:02 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (107.0ms)
+  Rendered orders/new.html.erb within layouts/application (112.0ms)
+Completed 200 OK in 305ms (Views: 300.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:07:03 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2015-03-18 03:07:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:07:03 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:07:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:07:03 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:07:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:07:03 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:07:05 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 5ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:08:47 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (112.0ms)
+  Rendered orders/new.html.erb within layouts/application (116.0ms)
+Completed 200 OK in 293ms (Views: 287.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:08:47 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:08:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:08:48 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:08:48 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:08:48 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2015-03-18 03:08:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:08:48 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:11:31 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 5ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:11:43 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (7.0ms)
+  Rendered orders/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=Banana" for 127.0.0.1 at 2015-03-18 03:11:43 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"Banana"}
+  [1m[36mClient Load (1.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'banana%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:11:43 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:43 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:43 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:43 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:43 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:43 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:11:44 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:11:54 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (7.0ms)
+  Rendered orders/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=Banana" for 127.0.0.1 at 2015-03-18 03:11:54 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"Banana"}
+  [1m[36mClient Load (1.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'banana%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:54 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:11:54 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:54 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:54 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:54 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:54 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:11:54 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=v" for 127.0.0.1 at 2015-03-18 03:11:56 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"v"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'v%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:11:58 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:13:21 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (6.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 118ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:21 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:21 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:13:21 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:21 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:21 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:21 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:21 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:13:24 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:13:34 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (8.0ms)
+  Rendered orders/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=Banana" for 127.0.0.1 at 2015-03-18 03:13:34 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"Banana"}
+  [1m[36mClient Load (1.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'banana%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:34 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:34 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:34 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:13:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:13:34 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:13:36 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:14:15 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (11.0ms)
+  Rendered orders/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 180ms (Views: 180.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=Banana" for 127.0.0.1 at 2015-03-18 03:14:15 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"Banana"}
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'banana%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:15 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:15 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:14:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:15 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:15 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:15 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:14:17 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:14:22 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (7.0ms)
+  Rendered orders/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 80ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=Banana" for 127.0.0.1 at 2015-03-18 03:14:22 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"Banana"}
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'banana%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:23 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:23 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:23 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:23 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:14:23 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:23 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:23 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:14:24 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:14:28 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (9.0ms)
+  Rendered orders/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 76ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:28 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:28 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:28 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:28 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:14:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:14:28 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:14:30 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2015-03-18 03:17:15 +0200
+Processing by OrdersController#new as HTML
+  Rendered orders/_form.html.erb (7.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 147ms (Views: 146.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=Banana" for 127.0.0.1 at 2015-03-18 03:17:16 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"Banana"}
+  [1m[35mClient Load (0.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'banana%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-18 03:17:16 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-18 03:17:16 +0200
+
+
+Started GET "/assets/bootstrap3-autocomplete-input.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:17:16 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-18 03:17:16 +0200
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-18 03:17:16 +0200
+
+
+Started GET "/assets/bootstrap3-typeahead.min.js?body=1" for 127.0.0.1 at 2015-03-18 03:17:16 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-18 03:17:16 +0200
+
+
+Started GET "/orders/autocomplete_client_name?q=v" for 127.0.0.1 at 2015-03-18 03:17:19 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"v"}
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'v%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=b" for 127.0.0.1 at 2015-03-18 03:17:19 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"b"}
+  [1m[35mClient Load (1.0ms)[0m  SELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'b%')  ORDER BY clients.name ASC LIMIT 10
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/autocomplete_client_name?q=Banana" for 127.0.0.1 at 2015-03-18 03:17:25 +0200
+Processing by OrdersController#autocomplete_client_name as JSON
+  Parameters: {"q"=>"Banana"}
+  [1m[36mClient Load (0.0ms)[0m  [1mSELECT  clients.id, clients.name FROM "clients"  WHERE (LOWER(clients.name) LIKE 'banana%')  ORDER BY clients.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)

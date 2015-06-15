@@ -10,6 +10,8 @@
 	<%= f.simple_fields_for :holdings do |holdings_form| %>
 		
 	<%= holdings_form.association :stock, label_method: :symbol, value_method: :id, include_blank: false %>
+	<%#= holdings_form.association :stock, :url => autocomplete_stock_symbol_portfolios_path, :as => :autocomplete, :update_elements => {:id => "#stock_id"} %>
+	<%#= holdings_form.hidden_field :stock_id, id: 'stock_id' %>
 	<%= holdings_form.input :amount, :input_html => { min: 0 } %>
 	
 	<% end %>
