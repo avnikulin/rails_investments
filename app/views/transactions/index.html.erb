@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<h1>Transactions#index</h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <!-- ><th>User</th> -->
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @portfolios.each do |portfolio| %>
+      <tr>
+        <!-- ><td><%#= portfolio.user.name %></td> -->
+        <td><%= link_to portfolio.name, portfolio %></td>
+        <td><%#= link_to 'Show', portfolio %></td>
+        <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
+        <td><%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Portfolio', new_portfolio_path %>

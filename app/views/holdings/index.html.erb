@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Holdings</h1>
+<h1>Transaction History:</h1>
 
 <table class="table table-hover">
   <thead>
@@ -16,9 +16,9 @@
   <tbody>
     <% @holdings.each do |holding| %>
       <tr>
-        <td><%#= holding.portfolio.user.name %></td>
+        <td><%= holding.portfolio.user.id %></td>
         <td><%= link_to holding.stock.symbol, holding.stock %></td>
-				<td><%#= holding.portfolio.name %>
+				<td><%= holding.portfolio.name %></td>
         <td><%= holding.amount %></td>
         <td><%= link_to 'Show', holding %></td>
         <td><%= link_to 'Edit', edit_holding_path(holding) %></td>

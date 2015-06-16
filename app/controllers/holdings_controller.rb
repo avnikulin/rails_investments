@@ -5,7 +5,7 @@ class HoldingsController < ApplicationController
   # GET /holdings
   # GET /holdings.json
   def index
-    @holdings = Holding.all.order('created_at desc')
+    @holdings = Holding.joins(:portfolio).where(portfolio_id: params[:portfolio_id])
   end
 
   # GET /holdings/1

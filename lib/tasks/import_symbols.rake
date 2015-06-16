@@ -6,7 +6,6 @@ desc "Import stocks."
       symbol = line.chomp
       u = Stock.new(:symbol => symbol)
       u.save
-      #p symbol
     end
   end
 end
