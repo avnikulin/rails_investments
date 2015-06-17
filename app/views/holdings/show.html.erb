@@ -2,10 +2,10 @@
 
 <h1>Listing Holdings</h1>
 
-<p>
+<!-- ><p>
   <strong>User:</strong>
-  <%= @holding.user.name %>
-</p>
+  <%#= @holdings.user.name %>
+</p> -->
 
 <p>
   <strong>Stock:</strong>
@@ -18,4 +18,5 @@
 </p>
 
 <%= link_to 'Edit', edit_holding_path(@holding) %> |
-<%= link_to 'Back', holdings_path %>
+<%= link_to 'Back to Holdings', portfolio_holdings_path(@portfolio) %>
+

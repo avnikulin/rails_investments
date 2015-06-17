@@ -6,17 +6,23 @@ class HoldingsController < ApplicationController
   # GET /holdings.json
   def index
     @holdings = Holding.joins(:portfolio).where(portfolio_id: params[:portfolio_id])
+    @portfolio = Portfolio.find(params[:portfolio_id])
   end
 
   # GET /holdings/1
   # GET /holdings/1.json
   def show
-    @holdings = current_user.holdings.order('created_at desc')
+    #@holdings = current_user.holdings.order('created_at desc')
+    #@holdings = current_user.portfolios.find params[:portfolio_id]
+    #@holding = @holding.
+    @holding = Holding.find_by_id(params[:id])
+    @portfolio = Portfolio.find_by_id(params[:portfolio_id])
   end
 
   # GET /holdings/new
   def new
-    @holding = current_user.holdings.new
+    @portfolio = current_user.portfolios.find params[:portfolio_id]
+    @holding = @portfolio.holdings.build
   end
 
   # GET /holdings/1/edit
@@ -26,7 +32,7 @@ class HoldingsController < ApplicationController
   # POST /holdings
   # POST /holdings.json
   def create
-    @holding = current_user.holdings.new(holding_params)
+    @holding = Holding.new(holding_params)
 
     respond_to do |format|
       if @holding.save
@@ -66,9 +72,9 @@ class HoldingsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_holding
-      unless @holding = current_user.holdings.where(id: params[:id]).first
+      unless @holding = current_user.portfolios.where(id: params[:id])
         flash[:alert] = 'Holding not found.'
-        redirect_to root_url
+        #redirect_to root_url
       end
     end
 
