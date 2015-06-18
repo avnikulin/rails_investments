@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     get :autocomplete_stock_symbol, :on => :collection
   end
 
-  resources :holdings
+  #resources :holdings
 
   resources :stocks
 

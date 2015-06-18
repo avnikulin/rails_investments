@@ -27,16 +27,20 @@ class HoldingsController < ApplicationController
 
   # GET /holdings/1/edit
   def edit
+    @holding = Holding.find_by_id(params[:id])
+    @portfolio = Portfolio.find_by_id(params[:portfolio_id])
   end
 
   # POST /holdings
   # POST /holdings.json
   def create
+    @portfolio = Portfolio.find(params[:portfolio_id])
+    #@holding = @portfolio.holdings.new(params[:id])
     @holding = Holding.new(holding_params)
-
+    #@holding = Holding.find(params[:id])
     respond_to do |format|
       if @holding.save
-        format.html { redirect_to @holding, notice: 'Holding was successfully created.' }
+        format.html { redirect_to portfolio_holding_path(@portfolio, @holding), notice: 'Holding was successfully created.' }
         format.json { render :show, status: :created, location: @holding }
       else
         format.html { render :new }
@@ -48,9 +52,11 @@ class HoldingsController < ApplicationController
   # PATCH/PUT /holdings/1
   # PATCH/PUT /holdings/1.json
   def update    
+    @holding = Holding.find(params[:id])
+    @portfolio = Portfolio.find(params[:portfolio_id])
     respond_to do |format|
       if @holding.update(holding_params)
-        format.html { redirect_to @holding, notice: 'Holding was successfully updated.' }
+        format.html { redirect_to portfolio_holding_path(@portfolio, @holding), notice: 'Holding was successfully updated.' }
         format.json { render :show, status: :ok, location: @holding }
       else
         format.html { render :edit }
@@ -62,9 +68,10 @@ class HoldingsController < ApplicationController
   # DELETE /holdings/1
   # DELETE /holdings/1.json
   def destroy
+    @holding = Holding.find(params[:id])
     @holding.destroy
     respond_to do |format|
-      format.html { redirect_to holdings_url, notice: 'Holding was successfully destroyed.' }
+      format.html { redirect_to portfolio_holdings_url, notice: 'Holding was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

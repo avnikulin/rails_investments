@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @holding %> |
-<%= link_to 'Back', holdings_path %>
+<%= link_to 'Show', portfolio_holding_path(@portfolio, @holding) %> |
+<%= link_to 'Back to Holdings', portfolio_holdings_path(@portfolio) %>
