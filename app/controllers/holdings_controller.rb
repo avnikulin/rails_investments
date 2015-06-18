@@ -34,9 +34,9 @@ class HoldingsController < ApplicationController
   # POST /holdings
   # POST /holdings.json
   def create
-    @portfolio = Portfolio.find(params[:portfolio_id])
+    @portfolio = current_user.portfolios.find(params[:portfolio_id])
     #@holding = @portfolio.holdings.new(params[:id])
-    @holding = Holding.new(holding_params)
+    @holding = @portfolio.holdings.new(holding_params)
     #@holding = Holding.find(params[:id])
     respond_to do |format|
       if @holding.save
