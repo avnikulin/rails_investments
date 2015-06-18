@@ -2,10 +2,12 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <% # f.select :user_id, User.all.collect { |p| [ p.name, p.id ] } %>
-    <%= f.select :stock_id, Stock.all.collect { |p| [ p.symbol, p.id ] } %>
+    <%#  f.select :user_id, User.all.collect { |p| [ p.name, p.id ] } %>
+    <%#= f.select :stock_id, Stock.all.collect { |p| [ p.symbol, p.id ] } %>
 		<%#= f.select :portfolio_id, Portfolio.all.collect { |p| [ p.name, p.id ] } %>
 		<%#= f.association :portfolio, label_method: :name, value_method: :id, include_blank: false %>
+		<%#= f.input :stock, :as => :autocomplete, :source_query => autocomplete_stock_symbol_portfolio_holdings_url, :update_elements => {:id => "#stock_id"} %>
+		<%#= f.association :stock, :url => autocomplete_stock_symbol_portfolio_holdings_path, :as => :autocomplete, :update_elements => {:id => "#stock_id"} %>
     <%= f.input :amount %>
   </div>
 
