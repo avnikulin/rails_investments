@@ -1,7 +1,7 @@
 class HoldingsController < ApplicationController
   before_action :set_holding, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-  autocomplete :stock, :symbol, { :display_value => 'symbol_with_name', :full_model=>true }
+  autocomplete :stock, :name, { :display_value => 'symbol_with_name', :full_model=>true }
   
  # def get_autocomplete_items(parameters)
  #   items = Stock.select("DISTINCT CONCAT(' ', symbol, name) AS full_name, symbol, name").where(["CONCAT_WS(' ', symbol, name) LIKE ?", "%#{parameters[:term]}%"])
