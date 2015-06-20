@@ -69,7 +69,7 @@
           jQuery.getJSON( jQuery(e).attr('data-autocomplete'), params, function() {
             if(arguments[0].length === 0) {
               arguments[0] = [];
-              arguments[0][0] = { id: "", label: "no existing match" };
+              arguments[0][0] = { id: "", label: "No Stock Found" };
             }
             jQuery(arguments[0]).each(function(i, el) {
               var obj = {};
