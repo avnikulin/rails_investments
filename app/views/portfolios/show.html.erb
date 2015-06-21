@@ -1,6 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h2>Portfolio: <%= @portfolio.name %></h2>
+<h3 class="text">Portfolio:</h3>
+<ul class="nav nav-pills">
+    <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+					<%= @portfolio.name %>
+					 <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+					<% @portfolios.each do |portfolio| %>
+            <li><%= link_to portfolio.name, portfolio %></li>
+					<% end %>
+        </ul>
+    </li>
+    <li class="dropdown pull-right">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Settings <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </li>
+</ul>
 
 <table class="table table-hover" id = "example">
   <thead>

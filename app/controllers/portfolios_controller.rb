@@ -12,6 +12,7 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/1
   # GET /portfolios/1.json
   def show
+    @portfolios = current_user.portfolios.where.not(id: params[:id]).order('created_at desc')
     @holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
   end
 
