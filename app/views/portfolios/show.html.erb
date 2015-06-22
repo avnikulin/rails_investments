@@ -1,12 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<h3 class="text">Portfolio:</h3>
+
+<h4 class="nav navbar-text">Portfolio:</h4>
 <ul class="nav nav-pills">
-    <li class="dropdown">
+    <li class="dropdown hover">
         <a href="#" data-toggle="dropdown" class="dropdown-toggle">
 					<%= @portfolio.name %>
 					 <b class="caret"></b></a>
         <ul class="dropdown-menu">
+					<% @current_portfolio.each do |portfolio| %>
+					  <li class="disabled"><%= link_to portfolio.name, portfolio %></li>
+					<% end %>
 					<% @portfolios.each do |portfolio| %>
             <li><%= link_to portfolio.name, portfolio %></li>
 					<% end %>
@@ -22,6 +26,7 @@
         </ul>
     </li>
 </ul>
+
 
 <table class="table table-hover" id = "example">
   <thead>
@@ -40,8 +45,8 @@
 		<% @holdings.each do |holdings| %>
 		
     <% amount = holdings.sum_amount %>
-		<% data = YahooFinance.quotes(["#{holdings.stock.symbol}"], [:ask, :change, :name]) %>
-		<% price = data[0].ask %>
+		<% data = YahooFinance.quotes(["#{holdings.stock.symbol}"], [:last_trade_price, :change, :name]) %>
+		<% price = data[0].last_trade_price %>
 		<% change = data[0].change %>
 		<% name = data[0].name %>
 		<% value = amount.to_f * price.to_f %>
@@ -50,7 +55,7 @@
 				<td><%= holdings.stock.symbol %></td>
 				<td><%= name %></td>
 				<td><%= amount %></td>
-				<td><%= price %></td>
+				<td><%= number_to_currency(price) %></td>
 				<td class = "currency"><%= change %></td>
 				<td><%= number_to_currency(value) %></td>
 				</tr>

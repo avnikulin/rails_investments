@@ -2,6 +2,7 @@ class PortfoliosController < ApplicationController
   before_action :set_portfolio, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
   autocomplete :stock, :symbol
+  respond_to :html, :js
   
   # GET /portfolios
   # GET /portfolios.json
@@ -13,6 +14,7 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/1.json
   def show
     @portfolios = current_user.portfolios.where.not(id: params[:id]).order('created_at desc')
+    @current_portfolio = current_user.portfolios.where(id: params[:id]).order('created_at desc')
     @holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
   end
 
