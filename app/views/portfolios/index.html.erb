@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Your Portfolios</h1>
+<h3>Your Portfolios</h3>
+
+<%= link_to 'New Portfolio', new_portfolio_path, remote: true, :id => "new_portfolio_link" %>
 
 <table class="table table-hover">
   <thead>
@@ -11,21 +13,15 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id="portfolios">
     <% @portfolios.each do |portfolio| %>
-      <tr>
-        <!-- ><td><%#= portfolio.user.name %></td> -->
-        <td><%= link_to portfolio.name, portfolio %></td>
-        <td><%#= link_to 'Show', portfolio %></td>
-        <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
-        <td><%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
+<%= render "portfolio", :portfolio => portfolio %>
+
     <% end %>
   </tbody>
 </table>
 
+<%#= render 'portfolios' %>
+
 <br>
-
-<%= link_to 'New Portfolio', new_portfolio_path, remote: true %>
-
-<div id="task-form" style="display:none;"></div>

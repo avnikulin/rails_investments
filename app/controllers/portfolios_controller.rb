@@ -33,11 +33,13 @@ class PortfoliosController < ApplicationController
   # POST /portfolios
   # POST /portfolios.json
   def create
+    @portfolios = current_user.portfolios.order('created_at desc')
     @portfolio = current_user.portfolios.new(portfolio_params)
     #@portfolio.holdings.user_id = current_user.id
 
     respond_to do |format|
       if @portfolio.save
+        format.js
         format.html { redirect_to @portfolio, notice: 'Portfolio was successfully created.' }
         format.json { render :show, status: :created, location: @portfolio }
       else

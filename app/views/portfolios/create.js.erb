@@ -1,3 +1,3 @@
-# create.js.erb
-
-alert("hi");
+$('#new_portfolio').remove();
+$('#new_portfolio_link').show();
+$('#portfolios').prepend('<%= j render("portfolio", :portfolio => @portfolio) %>');
