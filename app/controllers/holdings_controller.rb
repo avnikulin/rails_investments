@@ -2,6 +2,7 @@ class HoldingsController < ApplicationController
   before_action :set_holding, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
   autocomplete :stock, :name, { :display_value => 'symbol_with_name', :full_model=>true }
+  respond_to :html, :js
   
  # def get_autocomplete_items(parameters)
  #   items = Stock.select("DISTINCT CONCAT(' ', symbol, name) AS full_name, symbol, name").where(["CONCAT_WS(' ', symbol, name) LIKE ?", "%#{parameters[:term]}%"])
@@ -45,6 +46,7 @@ class HoldingsController < ApplicationController
     #@holding = Holding.find(params[:id])
     respond_to do |format|
       if @holding.save
+        format.js {}
         format.html { redirect_to portfolio_holding_path(@portfolio, @holding), notice: 'Holding was successfully created.' }
         format.json { render :show, status: :created, location: @holding }
       else

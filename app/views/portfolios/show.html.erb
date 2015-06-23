@@ -64,6 +64,11 @@
   </tbody>
 </table>
 
+<%= link_to 'New Holding', new_portfolio_holding_path(@portfolio), remote: true %> 
+<div id="task-form" style="display:none;"></div>
+<div id="tasks" style="display:none;"></div>
+<br><br>
+
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %> |
 <%= link_to 'Transactions', portfolio_holdings_path(@portfolio) %>

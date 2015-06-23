@@ -35,7 +35,6 @@ class PortfoliosController < ApplicationController
   def create
     @portfolio = current_user.portfolios.new(portfolio_params)
     #@portfolio.holdings.user_id = current_user.id
-    
 
     respond_to do |format|
       if @portfolio.save
@@ -46,6 +45,9 @@ class PortfoliosController < ApplicationController
         format.json { render json: @portfolio.errors, status: :unprocessable_entity }
       end
     end
+    
+    
+    
   end
 
   # PATCH/PUT /portfolios/1
