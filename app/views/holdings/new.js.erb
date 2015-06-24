@@ -1,2 +1,9 @@
-$('#task-form').html("<%= j (render 'form') %>");
-$('#task-form').slideDown(150);
+$('#new_holding_link').hide().after('<%= j render("form") %>');
+$("button").click(function() {
+    var $btn = $(this);
+    $btn.button('loading');
+    // simulating a timeout
+    setTimeout(function () {
+        $btn.button('reset');
+    }, 2000);
+});

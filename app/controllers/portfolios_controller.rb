@@ -33,7 +33,7 @@ class PortfoliosController < ApplicationController
   # POST /portfolios
   # POST /portfolios.json
   def create
-    @portfolios = current_user.portfolios.order('created_at desc')
+    #@portfolios = current_user.portfolios.order('created_at desc')
     @portfolio = current_user.portfolios.new(portfolio_params)
     #@portfolio.holdings.user_id = current_user.id
 

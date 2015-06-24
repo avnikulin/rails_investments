@@ -41,30 +41,19 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id="holdings">
 		<% @holdings.each do |holdings| %>
 		
-    <% amount = holdings.sum_amount %>
-		<% data = YahooFinance.quotes(["#{holdings.stock.symbol}"], [:last_trade_price, :change, :name]) %>
-		<% price = data[0].last_trade_price %>
-		<% change = data[0].change %>
-		<% name = data[0].name %>
-		<% value = amount.to_f * price.to_f %>
+
 		
-      <tr>
-				<td><%= holdings.stock.symbol %></td>
-				<td><%= name %></td>
-				<td><%= amount %></td>
-				<td><%= number_to_currency(price) %></td>
-				<td class = "currency"><%= change %></td>
-				<td><%= number_to_currency(value) %></td>
-				</tr>
+		<%= render "/holdings/show_holdings", :holdings => holdings %>
+		<%# :name => name, :amount => amount, :price => price, :change => change, :value => value %>
 
     <% end %>
   </tbody>
 </table>
 
-<%= link_to 'New Holding', new_portfolio_holding_path(@portfolio), remote: true %> 
+<%= link_to 'New Holding', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link" %> 
 <div id="task-form" style="display:none;"></div>
 <div id="tasks" style="display:none;"></div>
 <br><br>

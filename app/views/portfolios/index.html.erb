@@ -2,7 +2,10 @@
 
 <h3>Your Portfolios</h3>
 
-<%= link_to 'New Portfolio', new_portfolio_path, remote: true, :id => "new_portfolio_link" %>
+
+<%= link_to new_portfolio_path, remote: true, :id => "new_portfolio_link" do %>
+<button type="button" class="btn btn-default">New Portfolio</button>
+<% end %>
 
 <table class="table table-hover">
   <thead>

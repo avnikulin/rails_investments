@@ -1,4 +1,4 @@
-<%= simple_form_for [@portfolio, @holding] do |f| %>
+<%= simple_form_for [@portfolio, @holding], remote: true do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -13,6 +13,8 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%#= f.button :submit %>
+		<%= f.button :button, "Save Post".html_safe, "data-loading-text": 'Loading', id: 'myButton' %>
+		 
   </div>
 <% end %>

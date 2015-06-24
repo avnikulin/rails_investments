@@ -15,15 +15,7 @@
 
   <tbody>
     <% @holdings.each do |holding| %>
-      <tr>
-        <td><%= holding.portfolio.user.id %></td>
-        <td><%= link_to holding.stock.symbol, holding.stock %></td>
-				<td><%= holding.portfolio.name %></td>
-        <td><%= holding.amount %></td>
-        <td><%= link_to 'Show', portfolio_holding_path(@portfolio, holding) %></td>
-        <td><%= link_to 'Edit', edit_portfolio_holding_path(@portfolio, holding) %></td>
-        <td><%= link_to 'Destroy', portfolio_holding_path(@portfolio, holding), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+			<%= render "holding", :holding => holding %>
     <% end %>
   </tbody>
 </table>

@@ -46,7 +46,7 @@ class HoldingsController < ApplicationController
     #@holding = Holding.find(params[:id])
     respond_to do |format|
       if @holding.save
-        format.js {}
+        format.js
         format.html { redirect_to portfolio_holding_path(@portfolio, @holding), notice: 'Holding was successfully created.' }
         format.json { render :show, status: :created, location: @holding }
       else
