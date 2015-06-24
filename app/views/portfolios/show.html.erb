@@ -27,6 +27,7 @@
     </li>
 </ul>
 
+<%= link_to 'Quick Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link", :class => "btn btn-default" %>
 
 <table class="table table-hover" id = "example">
   <thead>
@@ -43,20 +44,10 @@
 
   <tbody id="holdings">
 		<% @holdings.each do |holdings| %>
-		
-
-		
 		<%= render "/holdings/show_holdings", :holdings => holdings %>
-		<%# :name => name, :amount => amount, :price => price, :change => change, :value => value %>
-
     <% end %>
   </tbody>
 </table>
-
-<%= link_to 'New Holding', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link" %> 
-<div id="task-form" style="display:none;"></div>
-<div id="tasks" style="display:none;"></div>
-<br><br>
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %> |
