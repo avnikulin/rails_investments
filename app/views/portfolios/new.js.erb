@@ -1,2 +1,7 @@
 $('#new_portfolio_link').hide().after('<%= j render("form") %>');
 $('#portfolio_name').focus();
+$(".cancel-btn").click(function(evt) {
+	$('#new_portfolio_link').show();
+  evt.preventDefault();
+  return $(this).closest("#new_portfolio").hide();
+});

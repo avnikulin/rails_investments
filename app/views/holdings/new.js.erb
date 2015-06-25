@@ -8,3 +8,8 @@ $("button").click(function() {
         $btn.button('reset');
     }, 2000);
 });
+$(".cancel-btn").click(function(evt) {
+	$('#new_holding_link').show();
+  evt.preventDefault();
+  return $(this).closest("#new_holding").hide();
+});
