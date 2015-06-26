@@ -82,6 +82,17 @@ class HoldingsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def edit_all
+    @holding = Holding.joins(:portfolio).where(portfolio_id: params[:portfolio_id])
+    @portfolio = Portfolio.find_by_id(params[:portfolio_id])
+  end
+  
+  def update_all
+    @portfolio = Portfolio.find(params[:portfolio_id])
+    Holding.update(params[:holding].keys, params[:holding].values)
+    redirect_to portfolio_holdings_path(@portfolio)
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

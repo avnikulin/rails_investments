@@ -1,0 +1,33 @@
+<%= simple_form_for :holding, :url => portfolio_update_all_path(@portfolio), :html => { :method => :put } do |f| %>
+<%= f.error_notification %>
+
+<h2>Editing Holdings:</h2>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Stock</th>
+      <th>Amount of Shares</th>
+    </tr>
+  </thead>
+<tbody>
+
+<% @holding.each do |holding| %>
+<%= simple_fields_for "holding[]", holding do |holding_fields| %>
+		<tr>
+			<td><%= holding.stock.symbol %></td>
+			<td><%= holding_fields.input :amount, label: false, :input_html => {:maxlength =>2,:style=> 'width: 120px'} %></td>
+		<%#= holding_fields.text_field :amount %>
+		</tr>
+	<% end %>
+<% end %>
+  </tbody>
+</table>
+  <div class="form-actions">
+    <%= f.button :submit %>
+		<%#= submit_tag %>
+  </div>
+
+<% end %>
+<%= link_to 'Show', portfolio_holding_path(@portfolio, @holding) %> |
+<%= link_to 'Back to Holdings', portfolio_holdings_path(@portfolio) %>

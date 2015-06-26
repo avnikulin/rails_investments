@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h2>Transaction History</h2>
+<h2>Holdings</h2>
 
 <table class="table table-hover">
   <thead>
@@ -23,6 +23,7 @@
 <br>
 
 <%= link_to 'New Holding', new_portfolio_holding_path(@portfolio) %> | 
-<%= link_to 'Back to Portfolio', portfolio_path(@portfolio) %>
+<%= link_to 'Back to Portfolio', portfolio_path(@portfolio) %> |
+<%= link_to 'Add/Edit', portfolio_edit_all_path(@portfolio) %>
 
 <br><br>
