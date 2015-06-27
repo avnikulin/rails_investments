@@ -1,11 +1,12 @@
-<p id="notice"><%= notice %></p>
-
 <h2>Holdings</h2>
+
+<%= link_to 'Add/Edit Holdings', portfolio_edit_all_path(@portfolio), :class => "btn btn-default" %>
+<%= link_to 'View Portfolio', portfolio_path(@portfolio), :class => "btn btn-default" %>
+
 
 <table class="table table-hover">
   <thead>
     <tr>
-      <th>User</th>
       <th>Stock</th>
 			<th>Portfolio</th>
       <th>Amount of Shares</th>

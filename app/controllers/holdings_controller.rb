@@ -90,8 +90,15 @@ class HoldingsController < ApplicationController
   
   def update_all
     @portfolio = Portfolio.find(params[:portfolio_id])
-    Holding.update(params[:holding].keys, params[:holding].values)
-    redirect_to portfolio_holdings_path(@portfolio)
+    result = Holding.update(params[:holding].keys, params[:holding].values).reject { |p| p.errors.empty? }
+    if result.empty?
+      flash[:notice] = "Holdings updated"
+      redirect_to portfolio_holdings_path(@portfolio)
+    else
+      holding_ids = result.collect {|i| i.id}
+      flash[:error] = "Error(s) occurred updating holding(s): #{holding_ids.join ', '}"
+      redirect_to portfolio_edit_all_path(@portfolio)
+    end
   end
 
   private

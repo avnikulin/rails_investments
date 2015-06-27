@@ -28,6 +28,9 @@
 </ul>
 
 <%= link_to 'Quick Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link", :class => "btn btn-default" %>
+<%= link_to 'Add/Edit Holdings', portfolio_edit_all_path(@portfolio), :class => "btn btn-default" %>
+<%= link_to 'View Holdings', portfolio_holdings_path(@portfolio), :class => "btn btn-default" %>
+<%= link_to 'View All Portfolios', portfolios_path, :class => "btn btn-default" %>
 
 <table class="table table-hover" id = "example">
   <thead>
@@ -50,5 +53,4 @@
 </table>
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
-<%= link_to 'Back', portfolios_path %> |
-<%= link_to 'View Holdings', portfolio_holdings_path(@portfolio) %>
+<%= link_to 'Back', portfolios_path %>

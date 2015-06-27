@@ -13,11 +13,11 @@
 <tbody>
 
 <% @holding.each do |holding| %>
-<%= simple_fields_for "holding[]", holding do |holding_fields| %>
+<%= fields_for "holding[]", holding do |holding_fields| %>
 		<tr>
 			<td><%= holding.stock.symbol %></td>
-			<td><%= holding_fields.input :amount, label: false, :input_html => {:maxlength =>2,:style=> 'width: 120px'} %></td>
-		<%#= holding_fields.text_field :amount %>
+			<%#= holding_fields.input :amount, label: false, :input_html => {:maxlength =>2,:style=> 'width: 120px'} %>
+		<td><%= holding_fields.text_field :amount %></td>
 		</tr>
 	<% end %>
 <% end %>
@@ -29,5 +29,7 @@
   </div>
 
 <% end %>
-<%= link_to 'Show', portfolio_holding_path(@portfolio, @holding) %> |
-<%= link_to 'Back to Holdings', portfolio_holdings_path(@portfolio) %>
+<br>
+<%= link_to 'Back to Holdings', portfolio_holdings_path(@portfolio) %> | 
+<%= link_to 'Back to Portfolio', portfolio_path(@portfolio) %>
+<br><br>
