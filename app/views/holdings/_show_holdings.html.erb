@@ -1,4 +1,4 @@
-	    <% amount = holdings.sum_amount %>
+	    <% amount = holdings.amount %>
 			<% data = YahooFinance.quotes(["#{holdings.stock.symbol}"], [:last_trade_price, :change, :name]) %>
 			<% price = data[0].last_trade_price %>
 			<% change = data[0].change %>
@@ -6,7 +6,7 @@
 			<% value = amount.to_f * price.to_f %>
 			
 			<tr id="holding_<%= holdings.id %>">
-				<td><%= holdings.stock.symbol %></td>
+				<td><%= link_to holdings.stock.symbol, holdings.stock %></td>
 				<td><%= name %></td>
 				<td><%= amount %></td>
 				<td><%= number_to_currency(price) %></td>

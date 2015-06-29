@@ -15,6 +15,9 @@
 					<% end %>
         </ul>
     </li>
+		<li><%= link_to 'Quick Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link" %></li>
+		<li><%= link_to 'Add/Edit Holdings', portfolio_edit_all_path(@portfolio) %></li>
+		<li><%= link_to 'View All Portfolios', portfolios_path %></li>
     <li class="dropdown pull-right">
         <a href="#" data-toggle="dropdown" class="dropdown-toggle">Settings <b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -26,10 +29,6 @@
     </li>
 </ul>
 
-<%= link_to 'Quick Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link", :class => "btn btn-default" %>
-<%= link_to 'Add/Edit Holdings', portfolio_edit_all_path(@portfolio), :class => "btn btn-default" %>
-<%= link_to 'View Holdings', portfolio_holdings_path(@portfolio), :class => "btn btn-default" %>
-<%= link_to 'View All Portfolios', portfolios_path, :class => "btn btn-default" %>
 <p> </p>
 
 <ul class="nav nav-tabs">
@@ -47,7 +46,6 @@
 			<th>Current Price</th>
 			<th>Change</th>
 			<th>Value</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 

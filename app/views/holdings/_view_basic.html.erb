@@ -1,19 +1,18 @@
 <table class="table table-hover" id = "example">
   <thead>
     <tr>
-			<th>Ticker Basic</th>
+			<th>Ticker</th>
 			<th>Company</th>
 			<th>Amount</th>
 			<th>Current Price</th>
 			<th>Change</th>
 			<th>Value</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody id="holdings">
 		<% @holdings.each do |holdings| %>
-    <% amount = holdings.sum_amount %>
+    <% amount = holdings.amount %>
 		<% data = YahooFinance.quotes(["#{holdings.stock.symbol}"], [:last_trade_price, :change, :name]) %>
 		<% price = data[0].last_trade_price %>
 		<% change = data[0].change %>
@@ -21,7 +20,7 @@
 		<% value = amount.to_f * price.to_f %>
 		
 		<tr id="holding_<%= holdings.id %>">
-			<td><%= holdings.stock.symbol %></td>
+			<td><%= link_to holdings.stock.symbol, holdings.stock %></td>
 			<td><%= name %></td>
 			<td><%= amount %></td>
 			<td><%= number_to_currency(price) %></td>

@@ -15,7 +15,8 @@ class PortfoliosController < ApplicationController
   def show
     @portfolios = current_user.portfolios.where.not(id: params[:id]).order('created_at desc')
     @current_portfolio = current_user.portfolios.where(id: params[:id]).order('created_at desc')
-    @holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
+    @holdings = @portfolio.holdings.order('created_at desc')
+    #@holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
   end
 
   # GET /portfolios/new
@@ -80,13 +81,14 @@ class PortfoliosController < ApplicationController
     @portfolio = current_user.portfolios.find params[:id]
     @holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
     respond_to do |format|
+      format.html
       format.js
     end
   end
   
   def basic  
     @portfolio = current_user.portfolios.find params[:id]
-    @holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
+    @holdings = @portfolio.holdings.order('created_at desc')
     respond_to do |format|
       format.js
     end
@@ -94,7 +96,7 @@ class PortfoliosController < ApplicationController
   
   def detailed  
     @portfolio = current_user.portfolios.find params[:id]
-    @holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
+    @holdings = @portfolio.holdings.order('created_at desc')
     respond_to do |format|
       format.js
     end
