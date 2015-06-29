@@ -1,6 +1,6 @@
 $('#new_holding_link').hide().after('<%= j render("form") %>');
 $("#holding_stock_id").focus();
-$("button").click(function() {
+$("#new-cancel-btn").click(function() {
     var $btn = $(this);
     $btn.button('loading');
     // simulating a timeout

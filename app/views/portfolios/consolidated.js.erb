@@ -1,0 +1,12 @@
+$('#example').html('<%= j render partial: "holdings/view_consolidated" %>');
+$('ul.nav-tabs li.active').removeClass('active')
+$('#consolidated').parent('li').addClass('active')
+$("td.currency").each(function() {
+  var text = $(this).text();
+  var num = parseFloat(text);
+ 	if (num < 0) {
+    $(this).addClass("negative");
+ 	} else if (num > 0) {
+    $(this).addClass("positive");
+  }
+});

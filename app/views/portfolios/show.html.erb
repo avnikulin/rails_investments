@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 
 <h4 class="nav navbar-text">Portfolio:</h4>
@@ -31,6 +30,13 @@
 <%= link_to 'Add/Edit Holdings', portfolio_edit_all_path(@portfolio), :class => "btn btn-default" %>
 <%= link_to 'View Holdings', portfolio_holdings_path(@portfolio), :class => "btn btn-default" %>
 <%= link_to 'View All Portfolios', portfolios_path, :class => "btn btn-default" %>
+<p> </p>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><%= link_to "Basic", {:controller => "portfolios", :action => "basic"}, id: 'basic', :remote => true %></li>
+  <li role="presentation"><%= link_to "Detailed", {:controller => "portfolios", :action => "detailed"}, id: 'detailed', :remote => true %></li>
+  <li role="presentation"><%= link_to "Consolidated", {:controller => "portfolios", :action => "consolidated"}, id: 'consolidated', :remote => true %></li>
+</ul>
 
 <table class="table table-hover" id = "example">
   <thead>

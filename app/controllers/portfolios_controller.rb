@@ -75,6 +75,30 @@ class PortfoliosController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def consolidated  
+    @portfolio = current_user.portfolios.find params[:id]
+    @holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
+    respond_to do |format|
+      format.js
+    end
+  end
+  
+  def basic  
+    @portfolio = current_user.portfolios.find params[:id]
+    @holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
+    respond_to do |format|
+      format.js
+    end
+  end
+  
+  def detailed  
+    @portfolio = current_user.portfolios.find params[:id]
+    @holdings = @portfolio.holdings.select(:stock_id, :portfolio_id, "SUM(amount) as sum_amount").group(:stock_id, :portfolio_id).order("sum_amount DESC")
+    respond_to do |format|
+      format.js
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
