@@ -15,6 +15,7 @@
 //= require jquery-ui
 //= require bootstrap-sprockets
 //= require autocomplete-rails
+//= require highstock
 //= require_tree .
 
 	$(document).ready( function() {

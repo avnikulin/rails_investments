@@ -10,6 +10,7 @@ class StocksController < ApplicationController
   # GET /stocks/1
   # GET /stocks/1.json
   def show
+     @stocks = Stock.find_by_id(params[:id])
   end
 
   # GET /stocks/new

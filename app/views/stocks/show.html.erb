@@ -1,9 +1,98 @@
-<p id="notice"><%= notice %></p>
+<% time = Time.new %>
+<script>
+$(function () {
 
-<p>
-  <strong>Symbol:</strong>
-  <%= @stock.symbol %>
-</p>
+		var url = "https://query.yahooapis.com/v1/public/yql?q=" + encodeURIComponent("select Date, Open, High, Low, Close, Volume from csv where url='http://real-chart.finance.yahoo.com/table.csv?s=<%= @stock.symbol %>&d=<%= time.day %>&e=<%= time.month %>&f=<%= time.year %>&g=d&a=1&b=01&c=1800&ignore=.csv' and columns='Date,Open,High,Low,Close,Volume,Adj Close'") + "&format=json&callback=?";
+
+    $.getJSON(url, function (data) {
+        
+				//my vars
+				var symbol = '<%= @stock.symbol %>'
+        //console.log(data.query.results);
+				groupingUnits = [[
+				                'week',                         // unit name
+				                [1]                             // allowed multiples
+				            ], [
+				                'month',
+				                [1, 2, 3, 4, 6]
+				            ]];
+				
+        var data = data.query.results.row;
+        data = data.splice(1, data.length);
+        //console.log(data);
+        
+        var processedData = [];
+				var processedVolume = [];
+        $(data).each(function(index, value) {
+           //console.log(Date.parse(value.Date).getTime());
+           //console.log(Date.parse(value.Date));
+            processedData.push([Date.parse(value.Date), parseFloat(value.Open), parseFloat(value.High), parseFloat(value.Low), parseFloat(value.Close)]);
+						processedVolume.push([Date.parse(value.Date), parseFloat(value.Volume)]);
+        });
+        processedData = processedData.reverse();
+				processedVolume = processedVolume.reverse();
+        //console.log(processedData);
+        
+        // Create the chart
+			  $('#container').highcharts('StockChart', {
+
+			             rangeSelector: {
+			                 selected: 1
+			             },
+
+			             title: {
+			                 text: symbol + ' Historical'
+			             },
+
+			             yAxis: [{
+			                 labels: {
+			                     align: 'right',
+			                     x: -3
+			                 },
+			                 title: {
+			                     text: 'OHLC'
+			                 },
+			                 height: '60%',
+			                 lineWidth: 2
+			             }, {
+			                 labels: {
+			                     align: 'right',
+			                     x: -3
+			                 },
+			                 title: {
+			                     text: 'Volume'
+			                 },
+			                 top: '65%',
+			                 height: '35%',
+			                 offset: 0,
+			                 lineWidth: 2
+			             }],
+
+			             series: [{
+			                 type: 'candlestick',
+			                 name: symbol,
+			                 data: processedData,
+			                 dataGrouping: {
+			                     units: groupingUnits
+			                 }
+			             }, {
+			                 type: 'column',
+			                 name: 'Volume',
+			                 data: processedVolume,
+			                 yAxis: 1,
+			                 dataGrouping: {
+			                     units: groupingUnits
+			                 }
+			             }]
+			         });
+        
+    });
+
+});
+
+</script>
+
+<div id="container" style="height: 400px; min-width: 310px"></div>
 
 <%= link_to 'Edit', edit_stock_path(@stock) %> |
 <%= link_to 'Back', stocks_path %>
