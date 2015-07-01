@@ -10,12 +10,12 @@ $(function () {
 				var symbol = '<%= @stock.symbol %>'
         //console.log(data.query.results);
 				groupingUnits = [[
-				                'week',                         // unit name
-				                [1]                             // allowed multiples
-				            ], [
+				                'week',
+				                [1]
+												], [
 				                'month',
 				                [1, 2, 3, 4, 6]
-				            ]];
+				            		]];
 				
         var data = data.query.results.row;
         data = data.splice(1, data.length);
@@ -39,6 +39,10 @@ $(function () {
 			             rangeSelector: {
 			                 selected: 1
 			             },
+									 
+									 credits: {
+									     enabled: false
+									 },
 
 			             title: {
 			                 text: symbol + ' Historical'
@@ -73,6 +77,7 @@ $(function () {
 			                 name: symbol,
 			                 data: processedData,
 			                 dataGrouping: {
+												 forced: false,
 			                     units: groupingUnits
 			                 }
 			             }, {
