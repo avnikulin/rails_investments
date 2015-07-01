@@ -1,3 +1,5 @@
+<div id = "removable">
+<% total_value = 0 %>
 <table class="table table-hover table-condensed" id = "example">
   <thead>
     <tr>
@@ -12,7 +14,6 @@
 			<th>Value</th>
     </tr>
   </thead>
-
   <tbody id="holdings">
 		<% @holdings.each do |holdings| %>
     <% amount = holdings.amount %>
@@ -24,6 +25,7 @@
 		<% previous_close = data[0].previous_close %>
 		<% percent_change = data[0].change_in_percent %>
 		<% volume = data[0].volume %>
+		<% total_value += value %>
 		
 		<tr id="holding_<%= holdings.id %>">
 			<td><%= link_to holdings.stock.symbol, holdings.stock %></td>
@@ -32,10 +34,12 @@
 			<td><%= number_to_currency(price) %></td>
 			<td><%= previous_close %>
 			<td class = "currency"><%= change %></td>
-			<td class = "currency"><%= percent_change %>
-			<td><%= number_with_delimiter(volume, :delimiter => ',') %>
+			<td class = "currency"><%= percent_change %></td>
+			<td><%= number_with_delimiter(volume, :delimiter => ',') %></td>
 			<td><%= number_to_currency(value) %></td>
 			</tr>
     <% end %>
   </tbody>
 </table>
+<p>Total Value: <b><%= number_to_currency(total_value) %></b></p>
+</div>
