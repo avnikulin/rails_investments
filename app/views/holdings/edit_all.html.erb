@@ -1,7 +1,28 @@
+<h1>New Stock</h1>
+
+<%= simple_form_for [@portfolio, @holding_add_stock], wrapper: :inline_form,
+  html: { class: 'form-inline' } do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+		<%= f.association :stock, :url => autocomplete_stock_name_portfolio_holdings_path, :as => :autocomplete, :update_elements => {:id => "#stock_id"}, placeholder: 'Ticker' %>
+		<%= f.hidden_field :stock_id, :id => "stock_id" %>
+    <%= f.input :amount, placeholder: 'Amount' %>
+  </div>
+	<p> </p>
+  <div class="form-actions">
+		<%= f.button :button, "Save".html_safe, "data-loading-text": 'Loading', id: 'myButton', class: 'btn-success' %>
+		<%= link_to 'Cancel', :back, class: 'btn btn-default' %>
+  </div>
+	<p> </p>
+<% end %>
+
+
+
 <%= simple_form_for :holding, :url => portfolio_update_all_path(@portfolio), :html => { :method => :put } do |f| %>
 <%= f.error_notification %>
 
-<h2>Editing Holdings:</h2>
+<h1>Edit Existing Stocks</h1>
 
 <table class="table table-hover">
   <thead>

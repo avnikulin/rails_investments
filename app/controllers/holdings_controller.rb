@@ -47,7 +47,7 @@ class HoldingsController < ApplicationController
     respond_to do |format|
       if @holding.save
         format.js
-        format.html { redirect_to portfolio_holding_path(@portfolio, @holding), notice: 'Holding was successfully created.' }
+        format.html { redirect_to portfolio_path(@portfolio), notice: 'Holding was successfully created.' }
         format.json { render :show, status: :created, location: @holding }
       else
         format.html { render :new }
@@ -63,7 +63,7 @@ class HoldingsController < ApplicationController
     @portfolio = Portfolio.find(params[:portfolio_id])
     respond_to do |format|
       if @holding.update(holding_params)
-        format.html { redirect_to portfolio_holding_path(@portfolio, @holding), notice: 'Holding was successfully updated.' }
+        format.html { redirect_to portfolio_path(@portfolio), notice: 'Holding was successfully updated.' }
         format.json { render :show, status: :ok, location: @holding }
       else
         format.html { render :edit }
@@ -86,6 +86,7 @@ class HoldingsController < ApplicationController
   def edit_all
     @holding = Holding.joins(:portfolio).where(portfolio_id: params[:portfolio_id])
     @portfolio = Portfolio.find_by_id(params[:portfolio_id])
+    @holding_add_stock = @portfolio.holdings.build
   end
   
   def update_all

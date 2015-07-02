@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Listing Holdings</h1>
 
 <!-- ><p>
@@ -18,5 +16,7 @@
 </p>
 
 <%= link_to 'Edit', edit_portfolio_holding_path(@portfolio, @holding) %> |
-<%= link_to 'Back to Holdings', portfolio_holdings_path(@portfolio) %>
+<%= link_to 'Back to Portfolio', portfolio_path(@portfolio) %> |
+<%= link_to 'Add/Edit Holdings', portfolio_edit_all_path(@portfolio) %>
+
 
