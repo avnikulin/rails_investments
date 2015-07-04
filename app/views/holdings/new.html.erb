@@ -12,7 +12,7 @@
 	<p> </p>
   <div class="form-actions">
 		<%= f.button :button, "Save".html_safe, "data-loading-text": 'Loading', id: 'myButton', class: 'btn-success' %>
-		<button id="new-cancel-btn" class="btn btn-default cancel-btn">Cancel</button>
+		<%= link_to 'Cancel', portfolio_path(@portfolio), class: 'btn btn-default' %>
   </div>
 	<p> </p>
 <% end %>
