@@ -6,6 +6,8 @@
 		<%= f.association :stock, :url => autocomplete_stock_name_portfolio_holdings_path, :as => :autocomplete, :update_elements => {:id => "#stock_id"}, placeholder: 'Ticker' %>
 		<%= f.hidden_field :stock_id, :id => "stock_id" %>
     <%= f.input :amount, placeholder: 'Amount' %>
+    <%= f.input :position, collection: [ "Buy", "Sell", "Short", "Buy to Cover" ], include_blank: false %>
+		
   </div>
 	<p> </p>
   <div class="form-actions">
