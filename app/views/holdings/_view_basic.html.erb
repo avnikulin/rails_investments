@@ -15,7 +15,7 @@
 
   <tbody id="holdings">
 		<% @holdings.each do |holdings| %>
-    <% amount = holdings.amount %>
+    <% amount = (holdings.sum_buy - holdings.sum_sell) %>
 		<% data = YahooFinance.quotes(["#{holdings.stock.symbol}"], [:last_trade_price, :change, :change_in_percent, :name]) %>
 		<% price = data[0].last_trade_price %>
 		<% change = data[0].change %>
@@ -30,7 +30,7 @@
 			<td><%= amount %></td>
 			<td><%= number_to_currency(price) %></td>
 			<td class = "currency"><%= change %></td>
-			<td class = "currency"><%= percent_change %></td>
+			<td class = "currency"><%= percent_change %>
 			<td><%= number_to_currency(value) %></td>
 			</tr>
     <% end %>

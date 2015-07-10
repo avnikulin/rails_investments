@@ -3,9 +3,10 @@
 <table class="table table-hover table-condensed" id = "example">
   <thead>
     <tr>
-			<th>Ticker C</th>
+			<th>Ticker</th>
 			<th>Company</th>
 			<th>Amount</th>
+			<th>Position</th>
 			<th>Current Price</th>
 			<th>Change</th>
 			<th>Change %</th>
@@ -15,7 +16,7 @@
 
   <tbody id="holdings">
 		<% @holdings.each do |holdings| %>
-    <% amount = holdings.sum_amount %>
+    <% amount = holdings.amount %>
 		<% data = YahooFinance.quotes(["#{holdings.stock.symbol}"], [:last_trade_price, :change, :change_in_percent, :name]) %>
 		<% price = data[0].last_trade_price %>
 		<% change = data[0].change %>
@@ -28,9 +29,10 @@
 			<td><%= link_to holdings.stock.symbol, holdings.stock %></td>
 			<td><%= name %></td>
 			<td><%= amount %></td>
+			<td><%= holdings.position %>
 			<td><%= number_to_currency(price) %></td>
 			<td class = "currency"><%= change %></td>
-			<td class = "currency"><%= percent_change %>
+			<td class = "currency"><%= percent_change %></td>
 			<td><%= number_to_currency(value) %></td>
 			</tr>
     <% end %>
