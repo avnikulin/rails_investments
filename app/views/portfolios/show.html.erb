@@ -15,7 +15,7 @@
 					<% end %>
         </ul>
     </li>
-		<li><%= link_to 'Quick Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link" %></li>
+		<li><%#= link_to 'Quick Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link" %></li>
 		<li><%= link_to 'Add/Edit Holdings', portfolio_edit_all_path(@portfolio) %></li>
 		<li><%= link_to 'View All Portfolios', portfolios_path %></li>
     <li class="dropdown pull-right">
@@ -28,7 +28,7 @@
         </ul>
     </li>
 </ul>
-
+<%= link_to 'Quick Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link" %>
 <p> </p>
 
 <ul class="nav nav-tabs">
