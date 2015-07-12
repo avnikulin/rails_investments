@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'yahoo-finance'
 gem 'rails-jquery-autocomplete'
 gem 'jquery-ui-rails'
+gem 'bootstrap-datepicker-rails'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'

@@ -16,9 +16,12 @@
 //= require bootstrap-sprockets
 //= require autocomplete-rails
 //= require highstock
+//= require bootstrap-datepicker
 //= require_tree .
 
 	$(document).ready( function() {
+	
+	$('.datepicker').datepicker({format: 'yyyy-mm-dd'});
 
 	$("td.currency").each(function() {
     var text = $(this).text();

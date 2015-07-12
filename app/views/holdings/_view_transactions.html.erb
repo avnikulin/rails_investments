@@ -7,6 +7,7 @@
 			<th>Company</th>
 			<th>Amount</th>
 			<th>Position</th>
+			<th>Date</th>
 			<th>Current Price</th>
 			<th>Value</th>
     </tr>
@@ -25,7 +26,8 @@
 			<td><%= link_to holdings.stock.symbol, holdings.stock %></td>
 			<td><%= name %></td>
 			<td><%= amount %></td>
-			<td><%= holdings.position %>
+			<td><%= holdings.position %></td>
+			<td><%= holdings.date_purchased.strftime("%b %d, %Y") unless holdings.date_purchased.nil? %></td>
 			<td><%= number_to_currency(price) %></td>
 			<td><%= number_to_currency(value) %></td>
 			</tr>
