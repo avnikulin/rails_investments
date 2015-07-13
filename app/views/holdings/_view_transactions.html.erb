@@ -1,5 +1,4 @@
 <div id = "removable">
-<% total_value = 0 %>
 <table class="table table-hover table-condensed" id = "example">
   <thead>
     <tr>
@@ -8,6 +7,7 @@
 			<th>Amount</th>
 			<th>Position</th>
 			<th>Date</th>
+			<th>Traded Price</th>
 			<th>Current Price</th>
 			<th>Value</th>
     </tr>
@@ -20,7 +20,6 @@
 		<% price = data[0].last_trade_price %>
 		<% name = data[0].name %>
 		<% value = amount.to_f * price.to_f %>
-		<% total_value += value %>
 		
 		<tr id="holding_<%= holdings.id %>">
 			<td><%= link_to holdings.stock.symbol, holdings.stock %></td>
@@ -28,11 +27,11 @@
 			<td><%= amount %></td>
 			<td><%= holdings.position %></td>
 			<td><%= holdings.date_purchased.strftime("%b %d, %Y") unless holdings.date_purchased.nil? %></td>
+			<td><%= number_to_currency(holdings.trade_price)%></td>
 			<td><%= number_to_currency(price) %></td>
 			<td><%= number_to_currency(value) %></td>
 			</tr>
     <% end %>
   </tbody>
 </table>
-<p>Total Value: <b><%= number_to_currency(total_value) %></b></p>
 </div>
