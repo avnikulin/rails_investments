@@ -35,6 +35,7 @@
 			<th>Date</th>
 			<th>Amount</th>
 			<th>Price</th>
+			<th>Delete</th>
     </tr>
   </thead>
 <tbody>
@@ -44,10 +45,11 @@
 		<tr>
 			<td><b><%= holding.stock.symbol %></b></td>
 			<td><%= holding_fields.select :position, [ "Buy", "Sell" ] %></td>
-			<td><%= holding_fields.text_field :date_purchased, placeholder: 'Date Purchased', :class => "datepicker2", :value => (holding.date_purchased.strftime('%Y-%m-%d') if holding.date_purchased) %></td>
+			<td><%= holding_fields.text_field :date_purchased, placeholder: 'Date Purchased', :class => "datepicker", :value => (holding.date_purchased.strftime('%Y-%m-%d') if holding.date_purchased) %></td>
 			<%#= holding_fields.input :amount, label: false, :input_html => {:maxlength =>2,:style=> 'width: 120px'} %>
 		  <td><%= holding_fields.text_field :amount %></td>
 			<td><%= holding_fields.text_field :trade_price, placeholder: 'Price' %></td>
+			<td><%= link_to 'Destroy', portfolio_holding_path(@portfolio, holding), method: :delete, data: { confirm: 'Are you sure?' } %></td>
 		
 	</tr>
 	<% end %>
