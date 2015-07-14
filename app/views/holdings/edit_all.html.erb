@@ -49,8 +49,7 @@
 			<%#= holding_fields.input :amount, label: false, :input_html => {:maxlength =>2,:style=> 'width: 120px'} %>
 		  <td><%= holding_fields.text_field :amount %></td>
 			<td><%= holding_fields.text_field :trade_price, placeholder: 'Price' %></td>
-			<td><%= link_to 'Destroy', portfolio_holding_path(@portfolio, holding), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-		
+			<td><%= link_to portfolio_holding_path(@portfolio, holding), class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } do %><span class="glyphicon glyphicon-remove"></span><% end %></td>
 	</tr>
 	<% end %>
 <% end %>
