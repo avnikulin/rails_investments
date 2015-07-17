@@ -1,38 +1,33 @@
-
-
-<h4 class="nav navbar-text">Portfolio:</h4>
+<h4>Dashboard: <%= @portfolio.name %></h4>
 
 <ul class="nav nav-pills">
 	
+    
+		<li><%#= link_to 'Quick Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link" %></li>
+		<li><%= link_to 'Add/Edit Holdings', portfolio_edit_all_path(@portfolio) %></li>
+		<li><%= link_to 'View All Portfolios', portfolios_path %></li>
     <li class="dropdown hover">
         <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-					<%= @portfolio.name %>
+					Portfolios
 					 <b class="caret"></b></a>
         <ul class="dropdown-menu">
-					<% @current_portfolio.each do |portfolio| %>
-					  <li class="disabled"><%= link_to portfolio.name, portfolio %></li>
-					<% end %>
+					  <li class="disabled"><%= link_to @portfolio.name, @portfolio %></li>
 					<% @portfolios.each do |portfolio| %>
             <li><%= link_to portfolio.name, portfolio %></li>
 					<% end %>
         </ul>
     </li>
-		<li><%#= link_to 'Quick Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link" %></li>
-		<li><%= link_to 'Add/Edit Holdings', portfolio_edit_all_path(@portfolio) %></li>
-		<li><%= link_to 'View All Portfolios', portfolios_path %></li>
     <li class="dropdown pull-right">
         <a href="#" data-toggle="dropdown" class="dropdown-toggle">Settings <b class="caret"></b></a>
         <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
+            <li><%= link_to 'Edit', edit_portfolio_path(@portfolio) %></li>
             <li><a href="#">Another action</a></li>
             <li class="divider"></li>
             <li><a href="#">Settings</a></li>
         </ul>
     </li>
 </ul>
-<%= link_to 'Quick Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link" %>
-<p> </p>
-
+<p></p>
 <ul class="nav nav-tabs">
   <li role="presentation" class="active"><%= link_to "Basic", {:controller => "portfolios", :action => "basic"}, id: 'basic', :remote => true %></li>
   <li role="presentation"><%= link_to "Transactions", {:controller => "portfolios", :action => "transactions"}, id: 'transactions', :remote => true %></li>
@@ -40,5 +35,4 @@
 
 <%= render "/holdings/view_basic" %>
 
-<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
-<%= link_to 'Back', portfolios_path %>
+<%= link_to '[+] Add Stock', new_portfolio_holding_path(@portfolio), remote: true, :id => "new_holding_link" %>

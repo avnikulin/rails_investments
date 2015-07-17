@@ -40,7 +40,16 @@
 	    // simulating a timeout
 	    setTimeout(function () {
 	        $btn.button('reset');
-	    }, 2000);
+	    }, 3000);
+	});
+	
+	$("#myButtonEditAllSave").click(function() {
+	    var $btn = $(this);
+	    $btn.button('loading');
+	    // simulating a timeout
+	    setTimeout(function () {
+	        $btn.button('reset');
+	    }, 3000);
 	});
 
 });

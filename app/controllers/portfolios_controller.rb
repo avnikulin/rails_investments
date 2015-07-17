@@ -14,7 +14,6 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/1.json
   def show
     @portfolios = current_user.portfolios.where.not(id: params[:id]).order('created_at desc')
-    @current_portfolio = current_user.portfolios.where(id: params[:id]).order('created_at desc')
     @holdings = @portfolio.holdings.select(:stock_id).
   select(@portfolio.holdings.arel_table[:amount].sum.as("total_sum")).select(%q{
   sum(case when position = 'Buy' then amount else 0 end) as sum_buy}).select(%q{

@@ -1,4 +1,4 @@
-<%= simple_form_for @portfolio, remote: true do |f| %>
+<%= simple_form_for @portfolio, :remote => request.xhr? do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">

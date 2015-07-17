@@ -17,7 +17,7 @@
   </div>
 	<p> </p>
   <div class="form-actions">
-		<%= f.button :button, "Save".html_safe, "data-loading-text": 'Loading', id: 'myButton', class: 'btn-success' %>
+		<%= f.button :button, "Add Stock".html_safe, "data-loading-text": 'Loading', id: 'myButton', class: 'btn-success' %>
 		<%= link_to 'Cancel', :back, class: 'btn btn-default' %>
   </div>
 	<p> </p>
@@ -59,7 +59,7 @@
   </tbody>
 </table>
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "Save Changes".html_safe, "data-loading-text": 'Loading', id: 'myButtonEditAllSave', class: 'btn-success' %>
 		<%#= submit_tag %>
 		<%= link_to 'Cancel', portfolio_path(@portfolio), class: 'btn btn-default' %>
   </div>
