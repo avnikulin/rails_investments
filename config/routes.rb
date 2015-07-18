@@ -12,8 +12,7 @@ Rails.application.routes.draw do
     resources :holdings do
       
       get :autocomplete_stock_name, :on => :collection
-      get 'all/edit' => 'holdings#edit_all', :as => :edit_all
-      match 'all' => 'holdings#update_all', :as => :update_all, :via => :put
+
         
     end
 
@@ -22,9 +21,15 @@ Rails.application.routes.draw do
   resources :stocks
 
   resources :favorites
-
+  
+  authenticated :user do
+      root :to => "visitors#authorized_index", :as => "authorized_root"
+  end
+  
   mount Upmin::Engine => '/admin'
   root to: 'visitors#index'
   devise_for :users
   resources :users
+  
+
 end
