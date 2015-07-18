@@ -1,5 +1,5 @@
 class HoldingsController < ApplicationController
-  before_action :set_holding, only: [:show, :edit, :update, :destroy]
+  before_action :set_holding, only: [:show, :edit, :update, :destroy, :edit_all, :new]
   before_action :authenticate_user!
   autocomplete :stock, :name, { :display_value => 'symbol_with_name', :full_model=>true }
   respond_to :html, :js
@@ -34,7 +34,7 @@ class HoldingsController < ApplicationController
   # GET /holdings/1/edit
   def edit
     @holding = Holding.find_by_id(params[:id])
-    @portfolio = Portfolio.find_by_id(params[:portfolio_id])
+    @portfolio = current_user.portfolios.find_by_id(params[:portfolio_id])
   end
 
   # POST /holdings
@@ -86,7 +86,8 @@ class HoldingsController < ApplicationController
   def edit_all
     @holding = Holding.joins(:portfolio).where(portfolio_id: params[:portfolio_id])
     @portfolio = Portfolio.find_by_id(params[:portfolio_id])
-    @holding_add_stock = @portfolio.holdings.build
+    @portfolio_test = current_user.portfolios.find_by_id(params[:portfolio_id])
+    @holding_add_stock = @portfolio_test.holdings.build
   end
   
   def update_all
@@ -105,9 +106,9 @@ class HoldingsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_holding
-      unless @holding = current_user.portfolios.where(id: params[:id])
+      unless @holding = current_user.portfolios.find_by_id(params[:portfolio_id])
         flash[:alert] = 'Holding not found.'
-        #redirect_to root_url
+        redirect_to root_url
       end
     end
 

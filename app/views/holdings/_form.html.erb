@@ -3,7 +3,7 @@ $('.datepicker').datepicker({format: 'yyyy-mm-dd'});
 </script>
 
 <%= simple_form_for [@portfolio, @holding], wrapper: :inline_form,
-  html: { class: 'form-inline' }, remote: true do |f| %>
+  html: { class: 'form-inline' }, :remote => request.xhr? do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
